@@ -48,6 +48,12 @@ h1 {
     font-weight: 500;
 }
 
+.no-border-button {
+  border: none;
+  outline: none; 
+}
+
+
 #Start {
     background-color: rgb(251,219,104);
 }
