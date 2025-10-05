@@ -1,11 +1,21 @@
 let startButton = document.getElementById("Start");
 let stopButton = document.getElementById("Stop");
 let resetButton = document.getElementById("Reset");
+let toggleButton = document.getElementById("toggleMode");
 let hour = 0;
 let minute = 0;
 let second = 0;
 let count = 0;
 let timer = null;
+
+toggleButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    toggleButton.textContent = "☀️";
+  } else {
+    toggleButton.textContent = "🌙";
+  }
+});
 
 startButton.addEventListener("click", function () {
   if (timer !== null) {

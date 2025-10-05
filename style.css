@@ -7,7 +7,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  transition: background-color 0.3s;
 }
+
+body.dark-mode {
+  background-color: #1a1a1a;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -53,6 +59,22 @@ h1 {
 }
 .button:hover {
   opacity: 0.8;
+}
+
+#toggleMode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#toggleMode:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #Reset {
   margin-bottom: 20px;
