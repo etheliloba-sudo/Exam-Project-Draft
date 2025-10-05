@@ -66,7 +66,7 @@ h1 {
 
 /* Styles for screens smaller than 600px */
 @media (max-width: 600px) {
-  .stopwatch-container {
+  .container {
     width: 90%;
     margin: 20px auto;
   }
