@@ -57,3 +57,20 @@ h1 {
 #Reset {
   margin-bottom: 20px;
 }
+
+/* Default styles for desktop */
+.stopwatch-container {
+  width: 500px;
+  margin: 50px auto;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+  .stopwatch-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .stopwatch-display {
+    font-size: 2em; 
+  }
+}
